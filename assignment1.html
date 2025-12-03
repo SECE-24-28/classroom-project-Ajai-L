@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Ajai">
+    <title>HTML Page</title>
+</head>
+<body>
+    <h1>My HTML-only Website</h1>
+    <p> <b>Simple site built using only HTML tags - no CSS</b> </p>
+    <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#features">Features</a></li>
+        <li><a href="#contact">Contact</a></li>   
+    </ul>
+
+    <h2 id = "home"> Welcome</h2>
+    <p>This page demonstrate layout and contact using only HTML tags, Use headings, lists, tables, and forms to present information without CSS</p>
+    <h2 id="about">About this Page</h2>
+    <p>The page uses semantic tags: &ltheader&gt, &ltnav&gt, &ltmain&gt, &ltarticle&gt, &ltaside&gt and &ltfooter&gt </p>
+
+    <h3>Key Points</h3>
+    <ol>
+        <li>Redable structure for users and search engines.</li>
+        <li>No external styles - browser default styles only.</li>
+        <li>Works Well for quick prototype or content-focused pages.</li>
+    </ol>
+    <h2 id ="features">Features (HTML-only)</h2>
+    <dl>
+    <dh>Semantic layout</dh>
+    <dd>Clear structure using sectioning elements</dd>
+    <dh>Accessible navigation</dh>
+    <dd>Keyboard and screen-reader-friendly links and headings</dd>
+    <dh>Forms and tables</dh>
+    <dd>Collect input and show tablular data using plain HTML.</dd>
+    </dl>
+
+    <h2>Sample Data Table</h2>
+    <table border="2">
+        <legend>Product list</legend>
+        <tr>
+            <th>Product</th>
+            <th>Category</th>
+            <th>Price(INR)</th>
+        </tr>
+        <tr>
+            <td>Notebook</td>
+            <td>Stationary</td>
+            <td>50</td>
+        </tr>
+        <tr>
+            <td>Pen</td>
+            <td>Stationary</td>
+            <td>10</td>
+            
+        </tr>
+        <tr>
+            <td>Backpack</td>
+            <td>Accessories</td>
+            <td>799</td>
+        </tr>
+    </table>
+
+    <h2>Quick Links</h2>
+    <ul>
+        <li><a href="#features">See features</a></li>
+        <li><a href="#contact">Contact us</a></li>
+        <li><a href ="#about">More about this demo</a></li>
+    </ul>
+
+    <h2 id="contact">Contact</h2>
+    <p>if you'd like to get in touch, fill this simple form (no styling).</p>
+
+    <fieldset>
+        <legend>Contact form</legend>
+        <form action="/submit" method="post">
+            <label for="name">Name:<br></label>
+            <input type="text" id="name" name="name" required>
+            <br>
+            <label for="email">Email:<br></label>
+            <input type="email" id="email" name="email" required>
+            <br>
+            <label for="message">Message: <br></label>
+            <input type="text" id="message" name="message" required>
+            <br>
+            <p>Preferred contact:</p>
+            <input type="radio" id="email" name="email" value="Email">
+            <label for="email">Email</label><br>
+            <input type="radio" id="phone" name="phone" value="Phone">
+            <label for="phone">Phone</label><br>
+            <br>
+            <input type="submit" value="Send">
+        </form>
+    </fieldset>
+
+    <p>&copy; 2025 My HTML-only Website</p>
+</body>
+</html>

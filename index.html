@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Learning HTML for full stack" />
+    <meta name="keyword" content="HTML, CSS, Javascript, fullstack, js, MERN"/>
+    <meta name="author" content="Leaf">
+    <!--<meta http-equiv="refresh" content="100; url = https://www.geeksforgeeks.org/html/html-basics/">-->
+
+    <title>HTML Basics</title>
+</head>
+<body>
+    <a href="index1.html" target="_blank">Go to Index1</a> <br>
+    <a href="#index1_html">Index1</a>
+    <!--Block level tag-->
+    <h1>Hello, World!</h1>
+    <p>This is a sample HTML document.</p>
+    <p>It contains basic HTML structure.</p>
+    <!--Inline level tag-->
+    <span>Enjoy coding!</span>
+    <span>Have a great day!</span>
+    <!--Semantic tag-->
+    <p>Semantic tags provide meaning to the content.</p>
+    <section>
+        <h2>About Semantic Tags</h2>
+        <p>They help with SEO and accessibility.</p>
+    </section>
+    <!--Non semantic tag-->
+    <div>This is a non-semantic tag used for grouping content.</div><br>
+    <!------------------------------------------------------------------------------------------------------------------------->
+    <!--table tag-->
+    <p>Sample Table 1:</p>
+    <table border="2">
+        <tr>
+            <th> Name </th>
+            <th> Age </th>
+            <th> Email </th>
+        </tr>
+        <tr>
+            <td>Rahul</td>
+            <td>21</td>
+            <td>rahul@gmail.com</td>
+        </tr>
+        <tr>
+            <td>Arun</td>
+            <td>22</td>
+            <td>arun@gmail.com</td>
+        </tr>
+    </table>
+
+    <p>Sample Table 2:</p>
+    <table border="2">
+        <tr>
+            <th> Name </th>
+            <td> Rahul </td>
+            <td> Arun </td>
+        </tr>
+        <tr>
+            <th>Age</th>
+            <td>21</td>
+            <td>22</td>
+        </tr>
+        <tr>
+            <th>Email</th>
+            <td>rahul@gmail.com</td>
+            <td>arun@gmail.com</td>
+        </tr>
+    </table>
+
+<br><br>
+    <!--fieldset tag-->
+    <fieldset>
+    <!--Form tag-->
+    <legend>Contact</legend>
+    <form action="/submit" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        <br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <br>
+        <input type="submit" value="Submit">
+    </form>
+    </fieldset>
+
+
+    <!--ul-->
+    <ul>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+    </ul>
+
+    <!--ol-->
+    <ol>
+        <li>First</li>
+        <li>Second</li>
+        <li>Third</li>
+    </ol>
+
+    <dl>px</dl>
+    <dd id="pixel">pixel</dd>
+    <img src="images/Cyberpunk2077_SteamAvatars_Male-V.png" alt="Cyberpunk 2077" width="500" height="500"> <br><br>
+
+    <iframe src="index1.html" frameborder="5" id="index1_html" height="700" width="500"></iframe>
+    
+
+</body>
+</html>

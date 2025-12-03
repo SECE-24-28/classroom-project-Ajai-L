@@ -1,0 +1,98 @@
+*{
+    /* Universal selector to apply to all elements */
+}
+
+p{
+    color: beige;
+}
+
+body{
+    background-color: black;
+    color: aliceblue;
+}
+h1{
+    color:bisque;
+    border: 5px solid honeydew;
+}
+
+#a{
+    color: turquoise;
+    font: 1em sans-serif;
+}
+
+.b{
+    color: rgb(51, 0, 255);
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#h2{
+    border: none;
+    color: orange;
+    font-size: 2em;
+    text-decoration: underline;
+}
+
+h2{
+    color: aquamarine;
+    border: 3px dashed rgb(255, 0, 255);
+}
+
+/* Decendant Selector */
+div p{
+    color: lightcoral;
+}
+/* Child Selector */
+div > p{
+    color: lightgreen;
+}
+
+/* Attribute Selector */
+button[type="submit"]{
+    background-color:blanchedalmond;
+    color: brown;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 100px;
+}
+span{
+    color: powderblue;
+}
+
+
+/* Pseudo-class Selector */
+li:nth-child(odd){
+    background-color: lightgray;
+}
+li:nth-child(even):hover{
+    background-color: lightyellow;
+}
+
+/* Pseudo-element Selector */
+.r::before{
+    content: "Written CSS ☆*: .｡. o(≧▽≦)o .｡.:*☆ ";
+    font-size: 10px;
+}
+
+#s1::before{
+
+    font-size: 45px ;
+    content: "🧸";
+
+}
+
+.q::after{
+    font-size: 30px;
+    content: "🎈";
+}
+.q::first-line{
+    font-size: 30px;
+    font-weight: bold;
+}
+
+h1::nth-child(1){
+    border: 3px solid red;
+
+    /*padding: 30px;
+    padding: 10px 20px 10px 20px;
+    padding: 20px 80px;
+    margin: 80px; */
+}

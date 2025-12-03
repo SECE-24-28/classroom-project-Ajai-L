@@ -2,9 +2,9 @@
     border: 1px solid black;
     display:flex;
     height: 90vh;
-    gap: 10px;
-    justify-content: center;
-    align-items: center;
+    gap: 5px;
+    justify-content: flex-start;
+    align-items: flex-start;
     flex-direction: row;
     flex-wrap: wrap;
 }
@@ -16,4 +16,18 @@
     font-size: 24px;
     height:100px;
     width: 200px;
+}
+
+.flexItem:nth-child(1){
+    background-color: rgb(159, 24, 24);
+    color: white;
+    order: 1;
+}
+
+.flexItem:nth-child(6){
+    order:-1;
+}
+
+.flexItem:nth-child(2){
+    align-self: flex-end;
 }

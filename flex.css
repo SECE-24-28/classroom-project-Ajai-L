@@ -2,17 +2,18 @@
     border: 1px solid black;
     display:flex;
     height: 90vh;
-    gap: 5px;
+    gap: 10px;
     justify-content: center;
     align-items: center;
-    gap: 10px;
-    flex-direction: column-reverse;
-    justify-content: flex-end;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
+
 .flexItem{
     background-color: lightgray;
     border: 2px solid rgb(0, 0, 0);
     color:rgb(0, 0, 0);
     font-size: 24px;
-    height:60px;
+    height:100px;
+    width: 200px;
 }

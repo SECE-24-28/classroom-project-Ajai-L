@@ -52,3 +52,23 @@ arrow();
 
 //4. Callback Functions and 5. IIFE (Immediately Invoked Function Expression)
 
+(()=>{
+    console.log("Callback and IIFE");
+})();
+
+// const addTwoNumbers = () => {
+//     let num1 = 10;
+//     let num2 = 20;
+//     let sum = num1 + num2;
+//     console.log("Sum:", sum);
+// }
+
+const addTwoNumbers = (parameter1, parameter2) => {
+    let num1 = parameter1 || 10; //default value is 10
+    let num2 = parameter2 || 20; //default value will be 20
+    let sum = num1 + num2;
+    console.log("Sum:", sum);
+}
+addTwoNumbers(20, 50);
+addTwoNumbers(40, 60);
+addTwoNumbers();

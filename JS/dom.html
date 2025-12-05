@@ -1,0 +1,55 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <script src="dom.js" defer></script>
+        <style>
+            .border{
+                border: 2px solid black;
+            }
+            .color{
+                color: aqua;
+            }
+            .background{
+                background-color: yellow;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Dom Manipulation</h1>
+        <h1 class ="a">Hello World</h1>
+        <p class="a">Hello from paragraph</p>
+        <span id="b">Span</span>
+        <div></div>
+    </body>
+    </html>
+
+    <!--js script
+    // 1 Tag selector
+    let heading1 = document.getElementsByTagName('h1');
+    //htmlCollection Array
+    console.log(heading1[1]);
+
+    //2. class selector
+    let cl = document.getElementsByClassName("a");
+    //htmlCollection array
+    console.log(cl);
+
+    //3. Id Selector
+    let idd = document.getElementById("b");
+    //It will return Single element and the first element
+    console.log(idd);
+
+    //4.Query Selector (it will work on all the three selectors)
+    let sel = document.querySelector("#b");
+    //it will return a single element and the first element
+    console.log(sel);
+
+    //5. Query Selector all
+    let d = document.querySelectorAll("#b");
+    //NodeList array
+    console.log(d);
+
+    -->

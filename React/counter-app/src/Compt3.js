@@ -1,7 +1,7 @@
 const Compt = () => {
     return (
         <div>
-            <h1>I have no clue here, but u</h1>
+            <h1>I have no clue here, but at least I'm trying</h1>
         </div>
     );
 };

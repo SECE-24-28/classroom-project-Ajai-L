@@ -6,9 +6,9 @@ import reportWebVitals from "./reportWebVitals";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Home from "./Pages/Home";
 import About from "./Pages/About";
-import Tasks from "./Pages/Tasks";
-import Notes from "./Pages/Notes";
-
+import Search from "./Pages/Search";
+import Cart from "./Pages/Cart";
+// just to create url and on which url which page should displayed
 const routerVariables = createBrowserRouter([
   {
     path: "/",
@@ -23,13 +23,13 @@ const routerVariables = createBrowserRouter([
         element: <About></About>,
       },
       {
-        path: "/notes",
-        element: <Notes></Notes>,
+        path: "/search",
+        element: <Search></Search>,
       },
       {
-        path: "/tasks",
-        element: <Tasks></Tasks>,
-      },      
+        path: "/cart",
+        element: <Cart></Cart>,
+      },
       {
         path: "*",
         element: <h1>Page not found Please check your URL</h1>,
@@ -45,4 +45,7 @@ root.render(
   </React.StrictMode>
 );
 
+// If you want to start measuring performance in your app, pass a function
+// to log results (for example: reportWebVitals(console.log))
+// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
 reportWebVitals();
